@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta name="description" content="" />
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/faviconn.png" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/faviconn.png" />
+
+    <!-- PAGE TITLE HERE -->
+    <title>Safalya Arcade</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- [if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+	<![endif] -->
+
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css" />
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/loader.css">
+
+
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css">
+    <!-- LOADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/loader.min.css">
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- REVOLUTION SLIDER 4 STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/rev-slider-4.css">
+
+
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link rel="stylesheet" type="text/css" href="../plugins/revolution/revolution/css/navigation.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,800,800i,900"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i&amp;subset=latin-ext" rel="stylesheet">
+
+    <style>
+        #gallery {
+            padding-top: 40px;
+        }
+
+        @media screen and (min-width: 991px) {
+            #gallery {
+                padding: 60px 30px 0 30px;
+            }
+        }
+        .value div .wt-icon-box-wraper{
+            height: 120px;
+        }
+
+        .leisure div .wt-icon-box-wraper{
+            height: 200px;
+        }
+        .img-wrapper {
+            position: relative;
+            margin-top: 15px;
+        }
+
+        .img-wrapper img {
+            width: 100%;
+        }
+
+        .img-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+        }
+
+        .img-overlay i {
+            color: #fff;
+            font-size: 3em;
+        }
+
+        #overlay {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #overlay img {
+            margin: 0;
+            width: 80%;
+            height: auto;
+            -o-object-fit: contain;
+            object-fit: contain;
+            padding: 5%;
+        }
+
+        @media screen and (min-width: 768px) {
+            #overlay img {
+                width: 60%;
+            }
+        
+        }
+
+        @media screen and (min-width: 1200px) {
+            #overlay img {
+                width: 50%;
+            }
+        }
+
+        #nextButton {
+            color: #fff;
+            font-size: 2em;
+            transition: opacity 0.8s;
+        }
+
+        #nextButton:hover {
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 768px) {
+            #nextButton {
+                font-size: 3em;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .mglrl{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        #prevButton {
+            color: #fff;
+            font-size: 2em;
+            transition: opacity 0.8s;
+        }
+
+        #prevButton:hover {
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 768px) {
+            #prevButton {
+                font-size: 3em;
+            }
+        }
+
+        #exitButton {
+            color: #fff;
+            font-size: 2em;
+            transition: opacity 0.8s;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        #exitButton:hover {
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 768px) {
+            #exitButton {
+                font-size: 3em;
+            }
+        }
+    </style>
+
+    <style>
+        .sample-container {
+            box-sizing: border-box;
+            padding-top: min(60%, 80vh);
+            position: relative;
+            background-color: #fafafa;
+            margin-bottom: 25px;
+        }
+
+        .sample-container>iframe {
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wraper">
+
+        <!-- HEADER START -->
+        <header class="site-header header-style-1  nav-wide">
+
+            <div class="sticky-header main-bar-wraper">
+                <div class="main-bar bg-white p-t10">
+                    <div class="container">
+                        <div class="logo-header">
+                            <div class="logo-header-inner logo-header-one">
+                                <a href="index.html">
+                                    <img src="images/logo-black.png" width="171" height="49" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <button data-target=".header-nav" data-toggle="collapse" type="button"
+                            class="navbar-toggle collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="header-nav navbar-collapse collapse">
+                            <ul class=" nav navbar-nav">
+                                <li class="active">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                </li>
+                                <li>
+                                <li>
+                                    <a href="about.html">About us</a>
+                                </li>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Projects</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="javascript:;">Ongoing Projects</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="panorama.html">Safalya Panorama</a></li>
+                                                <li><a href="rise.html">Safalya Rise</a></li>
+                                                <li><a href="bouganvilla.html">Bouganvilla</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Completed Projects</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="arcade.html">Safalya Arcade</a></li>
+                                                <li><a href="bliss.html">Safalya Bliss</a></li>
+                                                <li><a href="riverscape.html">Kunj Riverscape</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                <li>
+                                    <a href="contact.html">Contact us</a>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- HEADER END -->
+
+        <!-- CONTENT START -->
+        <div class="page-content">
+
+            <!-- SLIDER START -->
+            <div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header"
+                data-source="gallery" style="background:#eeeeee;padding:0px;">
+                <div id="welcome" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.3.1">
+                    <ul>
+                        <!-- SLIDE 1 -->
+                        <li data-index="rs-902" data-transition="fadethroughdark" data-slotamount="default"
+                            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
+                            data-easeout="default" data-masterspeed="default"
+                            data-thumb="images/projects/Safalya%20Arcade%20Views%20+%20Layout/Safalya%20Arcade%20V2.png" data-rotate="0"
+                            data-fstransition="fade" data-fsmasterspeed="300" data-fsslotamount="7"
+                            data-saveperformance="off" data-title="" data-param1="" data-param2="" data-param3=""
+                            data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                            data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="images/projects/Safalya Arcade Views + Layout/Safalya Arcade V2.png" alt=""
+                                data-lazyload="images/projects/Safalya Arcade Views + Layout/Safalya Arcade V2.png" data-bgposition="50% center"
+                                data-bgfit="cover" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- BACKGROUND VIDEO LAYER -->
+
+
+                            <div id="rrzb_902" class="rev_row_zone rev_row_zone_bottom" style="z-index: 7;">
+                                <!-- Content Block -->
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-caption  " id="slide-902-layer-1" data-x="['left','left','left','left']"
+                                    data-hoffset="['100','100','100','100']"
+                                    data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']"
+                                    data-width="none" data-height="none" data-whitespace="nowrap" data-type="row"
+                                    data-columnbreak="3" data-responsive_offset="on" data-responsive="off"
+                                    data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+                                    {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                    data-marginbottom="[50,60,40,50]" data-marginleft="[0,0,0,0]"
+                                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                                    data-paddingtop="[0,0,0,0]" data-paddingright="[150,130,80,50]"
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[150,130,80,50]"
+                                    style="z-index: 7; padding: 0px 54px!important;white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption  " id="slide-902-layer-2"
+                                        data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']"
+                                        data-y="['top','top','top','top']" data-voffset="['0','0','100','100']"
+                                        data-width="none" data-height="none" data-whitespace="nowrap" data-type="column"
+                                        data-responsive_offset="on" data-responsive="off"
+                                        data-frames='[{"delay":"+0","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                            {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power4.easeInOut"}]' data-columnwidth="100%"
+                                        data-verticalalign="top" data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                        data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                        data-textAlign="['center','center','center','center']"
+                                        data-paddingtop="[50,50,50,50]" data-paddingright="[0,0,30,30]"
+                                        data-paddingbottom="[50,50,50,50]" data-paddingleft="[0,0,30,30]"
+                                        style="z-index: 8;padding: 0px 54px!important; width: 100%;background-color:#f6f7f8">
+                                        <!-- LAYER NR. 3 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-902-layer-3"
+                                            data-x="['left','center','center','center']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','bottom','bottom','bottom']"
+                                            data-voffset="['0','260','250','190']" data-width="none" data-height="none"
+                                            data-whitespace="['normal','nowrap','nowrap','nowrap']" data-type="text"
+                                            data-basealign="slide" data-responsive_offset="off"
+                                            data-frames='[{"delay":"+490","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]"
+                                            data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]"
+                                            data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['center','inherit','inherit','inherit']"
+                                            data-paddingtop="[5,5,5,5]" data-paddingright="[5,5,5,5]"
+                                            data-paddingbottom="[5,5,5,5]" data-paddingleft="[5,5,5,5]"
+                                            style="z-index: 10; white-space: normal; font-size: 18px; line-height: 15px; font-weight: 700; color: #000; letter-spacing: 3px; display: inline-block;">
+
+                                        </div>
+
+                                        <!-- LAYER NR. 4 -->
+                                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+                                            id="slide-902-layer-4" data-x="['left','left','left','left']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                                            data-voffset="['0','0','0','0']" data-width="full" data-height="15"
+                                            data-whitespace="normal" data-type="shape" data-responsive_offset="on"
+                                            data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                                            data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                            style="z-index: 13; display: block;background-color:rgba(0, 0, 0, 0);">
+                                        </div>
+
+                                        <!-- LAYER NR. 5 -->
+                                        <div class="tp-caption   tp-resizeme  tp-linkmod" id="slide-902-layer-5"
+                                            data-x="['left','center','center','center']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','bottom','bottom','bottom']"
+                                            data-voffset="['0','170','140','120']" data-fontsize="['45','45','45','35']"
+                                            data-lineheight="['45','45','45','35']"
+                                            data-width="['660','460','100%','100%']" data-height="none"
+                                            data-whitespace="normal" data-type="text" data-actions=''
+                                            data-basealign="slide" data-responsive_offset="off"
+                                            data-frames='[{"delay":"+590","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},
+                                                {"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(45,48,50);"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['center','center','center','center']"
+                                            data-paddingtop="[0,0,0,0]" data-paddingright="[5,5,5,5]"
+                                            data-paddingbottom="[10,10,10,10]" data-paddingleft="[5,5,5,5]" style="z-index: 11; min-width: 660px; max-width: 660px; 
+                                                white-space: normal; font-size: 32px; line-height: 32px; 
+                                                font-weight: 300; color: #000; letter-spacing: 2px; 
+                                                display: inline-block;cursor:pointer;
+                                                text-decoration: none; text-transform:capitalize">
+                                            A CONTEMPORARY ELEVATION & STUNNING EXTERIORS... WHICH CAN'T BE MISSED BY THE PASSERS-BY!</div>
+
+                                        <!-- LAYER NR. 6 -->
+                                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+                                            id="slide-902-layer-6" data-x="['left','left','left','left']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                                            data-voffset="['0','0','0','0']" data-width="full" data-height="15"
+                                            data-whitespace="normal" data-type="shape" data-responsive_offset="on"
+                                            data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                                            data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                            style="z-index: 9; display: block;background-color:rgba(0, 0, 0, 0);">
+                                        </div>
+
+                                        <!-- LAYER NR. 7 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-902-layer-7"
+                                            data-x="['left','center','center','center']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','bottom','bottom','bottom']"
+                                            data-voffset="['0','100','80','70']"
+                                            data-width="['none','460','100%','100%']" data-height="none"
+                                            data-whitespace="normal" data-type="text" data-basealign="slide"
+                                            data-responsive_offset="off"
+                                            data-frames='[{"delay":"+690","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['center','center','center','center']"
+                                            data-paddingtop="[5,5,5,5]" data-paddingright="[5,5,5,5]"
+                                            data-paddingbottom="[5,5,5,5]" data-paddingleft="[5,5,5,5]"
+                                            style="z-index: 12; white-space: normal; font-size: 16px; line-height: 22px;
+                                                font-weight: 400; color: #000; letter-spacing: 0px; display: inline-block;">
+                                            <!-- You’ll be among the first to own 4-side
+                                            open apartments in Kalali. -->
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- LAYER NR. 8 -->
+                            <!-- Border Part -->
+                            <div class="tp-caption tp-shape tp-shapewrapper " id="slide-902-layer-8"
+                                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                data-width="full" data-height="full" data-whitespace="nowrap"
+                                data-visibility="['on','on','off','off']" data-type="shape" data-basealign="slide"
+                                data-responsive_offset="off" data-responsive="off"
+                                data-frames='[{"delay":50,"speed":100,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeIn"}]'
+                                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+                                style="z-index: 5;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);border-style:solid;border-width:0px 80px 80px 80px;">
+                            </div>
+
+                        </li>
+
+                        <!-- SLIDE 2 -->
+                        <li data-index="rs-903" data-transition="fadethroughdark" data-slotamount="default"
+                            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
+                            data-easeout="default" data-masterspeed="default"
+                            data-thumb="images/projects/Safalya%20Arcade%20Views%20+%20Layout/Safalya%20Arcade%20v3.png" data-rotate="0"
+                            data-fstransition="fade" data-fsmasterspeed="300" data-fsslotamount="7"
+                            data-saveperformance="off" data-title="" data-param1="" data-param2="" data-param3=""
+                            data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                            data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="images/projects/Safalya Arcade Views + Layout/Safalya Arcade v3.png" alt=""
+                                data-lazyload="images/projects/Safalya Arcade Views + Layout/Safalya Arcade v3.png"
+                                data-bgposition="center center" data-bgfit="cover" data-bgparallax="4"
+                                class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- BACKGROUND VIDEO LAYER -->
+
+
+                            <div id="rrzb_903" class="rev_row_zone rev_row_zone_bottom" style="z-index: 7;">
+                                <!-- Content Block -->
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-caption  " id="slide-903-layer-1" data-x="['left','left','left','left']"
+                                    data-hoffset="['100','100','100','100']"
+                                    data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']"
+                                    data-width="none" data-height="none" data-whitespace="nowrap" data-type="row"
+                                    data-columnbreak="3" data-responsive_offset="on" data-responsive="off"
+                                    data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+                                    {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                    data-marginbottom="[50,60,40,50]" data-marginleft="[0,0,0,0]"
+                                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                                    data-paddingtop="[0,0,0,0]" data-paddingright="[150,130,80,50]"
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[150,130,80,50]"
+                                    style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption  " id="slide-903-layer-2"
+                                        data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']"
+                                        data-y="['top','top','top','top']" data-voffset="['0','0','100','100']"
+                                        data-width="none" data-height="none" data-whitespace="nowrap" data-type="column"
+                                        data-responsive_offset="on" data-responsive="off"
+                                        data-frames='[{"delay":"+0","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                            {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power4.easeInOut"}]' data-columnwidth="100%"
+                                        data-verticalalign="top" data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                        data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                        data-textAlign="['center','center','center','center']"
+                                        data-paddingtop="[50,50,50,50]" data-paddingright="[0,0,30,30]"
+                                        data-paddingbottom="[50,50,50,50]" data-paddingleft="[0,0,30,30]"
+                                        style="z-index: 8; width: 100%;background-color:#f6f7f8">
+                                        <!-- LAYER NR. 3 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-903-layer-3"
+                                            data-x="['left','center','center','center']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','bottom','bottom','bottom']"
+                                            data-voffset="['0','260','250','190']" data-width="none" data-height="none"
+                                            data-whitespace="['normal','nowrap','nowrap','nowrap']" data-type="text"
+                                            data-basealign="slide" data-responsive_offset="off"
+                                            data-frames='[{"delay":"+490","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]"
+                                            data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]"
+                                            data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['center','inherit','inherit','inherit']"
+                                            data-paddingtop="[5,5,5,5]" data-paddingright="[5,5,5,5]"
+                                            data-paddingbottom="[5,5,5,5]" data-paddingleft="[5,5,5,5]"
+                                            style="z-index: 10; white-space: normal; font-size: 18px; line-height: 18px; font-weight: 700; color: #000; letter-spacing: 3px; display: inline-block;">
+                                        </div>
+
+                                        <!-- LAYER NR. 4 -->
+                                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+                                            id="slide-903-layer-4" data-x="['left','left','left','left']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                                            data-voffset="['0','0','0','0']" data-width="full" data-height="15"
+                                            data-whitespace="normal" data-type="shape" data-responsive_offset="on"
+                                            data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                                            data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                            style="z-index: 13; display: block;background-color:rgba(0, 0, 0, 0);">
+                                        </div>
+
+                                        <!-- LAYER NR. 5 -->
+                                        <div class="tp-caption   tp-resizeme  tp-linkmod" id="slide-903-layer-5"
+                                            data-x="['left','center','center','center']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','bottom','bottom','bottom']"
+                                            data-voffset="['0','170','140','120']" data-fontsize="['45','45','45','35']"
+                                            data-lineheight="['45','45','45','35']"
+                                            data-width="['660','460','100%','100%']" data-height="none"
+                                            data-whitespace="normal" data-type="text" data-actions=''
+                                            data-basealign="slide" data-responsive_offset="off"
+                                            data-frames='[{"delay":"+590","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},
+                                                {"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(45,48,50);"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['center','center','center','center']"
+                                            data-paddingtop="[0,0,0,0]" data-paddingright="[5,5,5,5]"
+                                            data-paddingbottom="[10,10,10,10]" data-paddingleft="[5,5,5,5]" style="z-index: 11; min-width: 660px; max-width: 660px; 
+                                                white-space: normal; font-size: 32px; line-height: 32px; 
+                                                font-weight: 300; color: #000; letter-spacing: 2px; 
+                                                display: inline-block;cursor:pointer;
+                                                text-decoration: none; text-transform:capitalize">LOCATED ON THE 75 MTR. DABHOI ROAD AND 18 MTR. ROAD JUNCTION
+                                        </div>
+
+                                        <!-- LAYER NR. 6 -->
+                                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+                                            id="slide-903-layer-6" data-x="['left','left','left','left']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                                            data-voffset="['0','0','0','0']" data-width="full" data-height="15"
+                                            data-whitespace="normal" data-type="shape" data-responsive_offset="on"
+                                            data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                                            data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                            style="z-index: 9; display: block;background-color:rgba(0, 0, 0, 0);">
+                                        </div>
+
+                                        <!-- LAYER NR. 7 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-903-layer-7"
+                                            data-x="['left','center','center','center']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','bottom','bottom','bottom']"
+                                            data-voffset="['0','100','80','70']"
+                                            data-width="['none','460','100%','100%']" data-height="none"
+                                            data-whitespace="normal" data-type="text" data-basealign="slide"
+                                            data-responsive_offset="off"
+                                            data-frames='[{"delay":"+690","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['center','center','center','center']"
+                                            data-paddingtop="[5,5,5,5]" data-paddingright="[5,5,5,5]"
+                                            data-paddingbottom="[5,5,5,5]" data-paddingleft="[5,5,5,5]"
+                                            style="z-index: 12; white-space: normal; font-size: 16px; line-height: 22px;
+                                                font-weight: 400; color: #000; letter-spacing: 0px; display: inline-block;">
+                                            <!-- The stylish and sleek Safalya Panorama is
+                                            crafted to impress one and all. The straight
+                                            lines with smooth curved edges create a
+                                            delightful contrast that adds a touch of class. -->
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- LAYER NR. 8 -->
+                            <!-- Border Part -->
+                            <div class="tp-caption tp-shape tp-shapewrapper " id="slide-903-layer-8"
+                                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                data-width="full" data-height="full" data-whitespace="nowrap"
+                                data-visibility="['on','on','off','off']" data-type="shape" data-basealign="slide"
+                                data-responsive_offset="off" data-responsive="off"
+                                data-frames='[{"delay":50,"speed":100,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeIn"}]'
+                                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+                                style="z-index: 5;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);border-style:solid;border-width:0px 80px 80px 80px;">
+                            </div>
+
+                        </li>
+
+                        <!-- SLIDE 3 -->
+                        <li data-index="rs-904" data-transition="fadethroughdark" data-slotamount="default"
+                            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
+                            data-easeout="default" data-masterspeed="default"
+                            data-thumb="images/projects/Safalya%20Arcade%20Views%20+%20Layout/Safalya%20Arcade%20V4.png" data-rotate="0"
+                            data-fstransition="fade" data-fsmasterspeed="300" data-fsslotamount="7"
+                            data-saveperformance="off" data-title="" data-param1="" data-param2="" data-param3=""
+                            data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                            data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="images/projects/Safalya Arcade Views + Layout/Safalya Arcade V4.png" alt=""
+                                data-lazyload="images/projects/Safalya Arcade Views + Layout/Safalya Arcade V4.png"
+                                data-bgposition="center center" data-bgfit="cover" data-bgparallax="4"
+                                class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- BACKGROUND VIDEO LAYER -->
+
+
+                            <div id="rrzb_904" class="rev_row_zone rev_row_zone_bottom" style="z-index: 7;">
+                                <!-- Content Block -->
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-caption  " id="slide-904-layer-1" data-x="['left','left','left','left']"
+                                    data-hoffset="['100','100','100','100']"
+                                    data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']"
+                                    data-width="none" data-height="none" data-whitespace="nowrap" data-type="row"
+                                    data-columnbreak="3" data-responsive_offset="on" data-responsive="off"
+                                    data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+                                    {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                    data-marginbottom="[50,60,40,50]" data-marginleft="[0,0,0,0]"
+                                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                                    data-paddingtop="[0,0,0,0]" data-paddingright="[150,130,80,50]"
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[150,130,80,50]"
+                                    style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
+
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption  " id="slide-904-layer-2"
+                                        data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']"
+                                        data-y="['top','top','top','top']" data-voffset="['0','0','100','100']"
+                                        data-width="none" data-height="none" data-whitespace="nowrap" data-type="column"
+                                        data-responsive_offset="on" data-responsive="off"
+                                        data-frames='[{"delay":"+0","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                            {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power4.easeInOut"}]' data-columnwidth="100%"
+                                        data-verticalalign="top" data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                        data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                        data-textAlign="['center','center','center','center']"
+                                        data-paddingtop="[50,50,50,50]" data-paddingright="[0,0,30,30]"
+                                        data-paddingbottom="[50,50,50,50]" data-paddingleft="[0,0,30,30]"
+                                        style="z-index: 8; width: 100%;background-color:#f6f7f8">
+                                        <!-- LAYER NR. 3 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-904-layer-3"
+                                            data-x="['left','center','center','center']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','bottom','bottom','bottom']"
+                                            data-voffset="['0','260','250','190']" data-width="none" data-height="none"
+                                            data-whitespace="['normal','nowrap','nowrap','nowrap']" data-type="text"
+                                            data-basealign="slide" data-responsive_offset="off"
+                                            data-frames='[{"delay":"+490","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]"
+                                            data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]"
+                                            data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['center','inherit','inherit','inherit']"
+                                            data-paddingtop="[5,5,5,5]" data-paddingright="[5,5,5,5]"
+                                            data-paddingbottom="[5,5,5,5]" data-paddingleft="[5,5,5,5]"
+                                            style="z-index: 10; white-space: normal; font-size: 18px; line-height: 18px; font-weight: 700; color: #000; letter-spacing: 3px; display: inline-block;">
+
+                                        </div>
+
+                                        <!-- LAYER NR. 4 -->
+                                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+                                            id="slide-904-layer-4" data-x="['left','left','left','left']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                                            data-voffset="['0','0','0','0']" data-width="full" data-height="15"
+                                            data-whitespace="normal" data-type="shape" data-responsive_offset="on"
+                                            data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                                            data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                            style="z-index: 13; display: block;background-color:rgba(0, 0, 0, 0);">
+                                        </div>
+
+                                        <!-- LAYER NR. 5 -->
+                                        <div class="tp-caption   tp-resizeme  tp-linkmod" id="slide-904-layer-5"
+                                            data-x="['left','center','center','center']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','bottom','bottom','bottom']"
+                                            data-voffset="['0','170','140','120']" data-fontsize="['45','45','45','35']"
+                                            data-lineheight="['45','45','45','35']"
+                                            data-width="['660','460','100%','100%']" data-height="none"
+                                            data-whitespace="normal" data-type="text" data-actions=''
+                                            data-basealign="slide" data-responsive_offset="off"
+                                            data-frames='[{"delay":"+590","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},
+                                                {"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(45,48,50);"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['center','center','center','center']"
+                                            data-paddingtop="[0,0,0,0]" data-paddingright="[5,5,5,5]"
+                                            data-paddingbottom="[10,10,10,10]" data-paddingleft="[5,5,5,5]" style="z-index: 11; min-width: 660px; max-width: 660px; 
+                                                white-space: normal; font-size: 32px; line-height: 32px; 
+                                                font-weight: 300; color: #000; letter-spacing: 2px; 
+                                                display: inline-block;cursor:pointer;
+                                                text-decoration: none; text-transform:capitalize">PROFIT FROM THIS UNIQUE ADVANTAGE!
+                                        </div>
+
+                                        <!-- LAYER NR. 6 -->
+                                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+                                            id="slide-904-layer-6" data-x="['left','left','left','left']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                                            data-voffset="['0','0','0','0']" data-width="full" data-height="15"
+                                            data-whitespace="normal" data-type="shape" data-responsive_offset="on"
+                                            data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                                            data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                            style="z-index: 9; display: block;background-color:rgba(0, 0, 0, 0);">
+                                        </div>
+
+                                        <!-- LAYER NR. 7 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-904-layer-7"
+                                            data-x="['left','center','center','center']"
+                                            data-hoffset="['0','0','0','0']" data-y="['top','bottom','bottom','bottom']"
+                                            data-voffset="['0','100','80','70']"
+                                            data-width="['none','460','100%','100%']" data-height="none"
+                                            data-whitespace="normal" data-type="text" data-basealign="slide"
+                                            data-responsive_offset="off"
+                                            data-frames='[{"delay":"+690","speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+                                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['center','center','center','center']"
+                                            data-paddingtop="[5,5,5,5]" data-paddingright="[5,5,5,5]"
+                                            data-paddingbottom="[5,5,5,5]" data-paddingleft="[5,5,5,5]"
+                                            style="z-index: 12; white-space: normal; font-size: 16px; line-height: 22px;
+                                                font-weight: 400; color: #000; letter-spacing: 0px; display: inline-block;">
+                                            <!-- Green getaways don't have to be a weekend thing at Safalya Panorama. The
+                                            picturesque
+                                            campus is generously peppered with ample green lawns and landscaping to cool
+                                            your eyes
+                                            and calm your senses. -->
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- LAYER NR. 8 -->
+                            <!-- Border Part -->
+                            <div class="tp-caption tp-shape tp-shapewrapper " id="slide-904-layer-8"
+                                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                data-width="full" data-height="full" data-whitespace="nowrap"
+                                data-visibility="['on','on','off','off']" data-type="shape" data-basealign="slide"
+                                data-responsive_offset="off" data-responsive="off"
+                                data-frames='[{"delay":50,"speed":100,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeIn"}]'
+                                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+                                style="z-index: 5;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);border-style:solid;border-width:0px 80px 80px 80px;">
+                            </div>
+
+                        </li>
+
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+            </div>
+            <!-- SLIDER END -->
+
+
+            <!-- WELCOME SECTION START -->
+            <div class="section-full p-t90 bg-gray">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-12 text-uppercase text-black">
+                                <span class="font-30 font-weight-300">THE BOOM TO YOUR BUSINESS</span>
+                                <h2 class="font-40">
+                                    Safalya Arcade
+                                </h2>
+                                <p></p>
+                                <p class="text-align-justify">In order to make every business’ wish become a reality, the Safalya Arcade was constructed on the 75 mtr Dabhoi Road and 18 mtr road junction. Its highlight being its contemporary elevation and stunning exteriors, the design is so that it makes sure that no one walks away without looking at this splendid structure.
+                                </p>
+                                <!-- <button class="m-b15 site-button m-r15 text-uppercase letter-spacing-2" type="button">Pramary button</button> -->
+                                <a href="https://drive.google.com/file/d/1_JLVr26KVul_8G1AGuB3dUqsuG4fh0Dy/view?usp=share_link" target="_blank" class="btn-half site-button button-lg m-b15"><span>Download Brochure</span><em></em></a>
+                            </div>
+
+                            <div class="col-md-7 col-sm-12">
+                                <div class="m-carousel-1 m-l100">
+                                    <div class="owl-carousel home-carousel-1 owl-btn-vertical-center">
+                                        <!-- COLUMNS 1 -->
+                                       
+                                        <!-- COLUMNS 2 -->
+                                        <div class="item">
+                                            <div class="ow-img wt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img
+                                                        src="images/Safalya Arcade Views + Layout/Safalya Arcade V2.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!-- COLUMNS 3 -->
+                                        <div class="item">
+                                            <div class="owl-img wt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img
+                                                        src="images/Safalya Arcade Views + Layout/Safalya Arcade v3.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!-- COLUMNS 4 -->
+                                        <div class="item">
+                                            <div class="ow-img wt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img
+                                                        src="images/Safalya Arcade Views + Layout/Safalya Arcade v4.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!-- COLUMNS 5 -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="hilite-title p-lr20 m-tb20 text-right text-uppercase bdr-gray bdr-right">
+                            <strong>18 Year</strong>
+                            <span class="text-black">Experience Working</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- WELCOME  SECTION END -->
+
+            <!-- WHO WE ARE SECTION START -->
+            <div class="section-full p-lr120 p-t140 bg-repeat mglrl"
+                style="background-image:url(images/background/ptn-1.png);">
+                <div class="container-fluid p-lr120 mglrl">
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="m-b50">
+                                <!-- TITLE START -->
+                                <div class="section-head">
+                                    <h3>Specifications</h3>
+                                    <div class="wt-separator-outer">
+                                        <div class="wt-separator bg-black"></div>
+                                    </div>
+                                </div>
+                                <!-- TITLE END -->
+
+                                <!-- ACCORDIAN  BACKGROUND GRAY -->
+                                <div class="section-content p-b30">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="wt-accordion acc-bg-gray" id="accordion5">
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseOne5"
+                                                                data-parent="#accordion5">
+                                                                STRUCTURE
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseOne5" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Earthquake resistant R.C.C.
+                                                            Frame
+                                                            structure.<br>
+                                                            • Floor-Ceiling Height: 11’6″(Commercial Units); 10’0″
+                                                            (Residential
+                                                            Units).Earthquake resistant RCC frame structure as per
+                                                            structure
+                                                            design.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseTwo5"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                FLOORING
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseTwo5" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• High Quality Double charged
+                                                            vitrified
+                                                            tiles.<br>
+                                                            • Anti-skid vitrified tiles in all Balconies.<br>
+                                                            • Heat & Water Proofing Treatment on terrace.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseThree5"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                KITCHEN
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseThree5" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Granite top platform with
+                                                            S.S. sink.<br>
+                                                            • Dado wall tiles upto lintel level.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseThree6"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                DOORS / WINDOWS
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseThree6" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Main Door with 4 ft wide good
+                                                            quality wooden box frame & veneer panelling on both
+                                                            side.<br>
+                                                            • Internal flush door with both side laminated.<br>
+                                                            • Powder coated aluminium sliding window with reflective
+                                                            glass & mosquito net.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="wt-accordion acc-bg-gray" id="accordion5">
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseOne7"
+                                                                data-parent="#accordion5">
+                                                                TOILET / PLUMBING
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseOne7" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Premium Ceramic tiles upto
+                                                            lintel level with anti skid tiles in flooring.<br>
+                                                            • Branded quality bath fittings & sanitary ware.<br>
+                                                            • Granite counter with ceramic fittings.<br>
+                                                            • Geyser points in all bedrooms.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseTwo8"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                ELECTRIFICATION
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseTwo8" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Concealed copper ISi
+                                                            wiring/M.C.B/E.L.C.B & Branded modular switches with
+                                                            sufficient
+                                                            electrical points.<br>
+                                                            • Provision for T.V. & internet point at convenient
+                                                            location.<br>
+                                                            •3-Phase electric connection.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseThree9"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                WALL FINISH
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseThree9" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• 2 Coat Wall putty with primer
+                                                            on internal walls.<br>
+                                                            • Double coat plaster with weather proof paints on exterior
+                                                            walls.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseThree10"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                WASH AREA
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseThree10" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Glaze tiles upto parapet
+                                                            level & Kota stone flooring with provision of washing
+                                                            machine
+                                                            electric & plumbing point.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="container">
+                        <div class="hilite-title p-lr20 m-tb20 text-left text-uppercase bdr-gray bdr-left">
+                            <strong>30+ Projects</strong>
+                            <span class="text-black">Completed</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <!-- WHO WE ARE SECTION END -->
+
+            <section class="section-full m-b80" id="gallery">
+                <div class="container">
+                    <div id="image-gallery">
+                        <div class="row float-left">
+                            <div class="container">
+                                <div class="hilite-title p-lr20 m-tb20 text-left text-uppercase bdr-gray bdr-left">
+                                    <strong>Gallery</strong>
+                                    <!-- <span class="text-black">Completed</span> -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 image">
+                                <div class="img-wrapper">
+                                    <a href="images/Safalya Arcade Views + Layout/layout - arcade/typical floor.png"><img src="images/Safalya Arcade Views + Layout/layout - arcade/typical floor.png"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fa fa-camera" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 image">
+                                <div class="img-wrapper">
+                                    <a href="images/Safalya Arcade Views + Layout/layout - arcade/ground floor.png"><img src="images/Safalya Arcade Views + Layout/layout - arcade/ground floor.png"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fa fa-camera" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 image">
+                                <div class="img-wrapper">
+                                    <a href="images/Safalya Arcade Views + Layout/layout - arcade/first floor.png"><img src="images/Safalya Arcade Views + Layout/layout - arcade/first floor.png"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fa fa-camera" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div><!-- End row -->
+                    </div><!-- End image gallery -->
+                </div><!-- End container -->
+            </section>
+
+            <section class="section-full p-lr120 m-b50 mglrl" style="background-image:url(images/background/ptn-1.png);">
+
+                <div class="section-content m-b50 p-lr120 bg-repeat mglrl" 
+                >
+                                
+                    <div class="row value">
+                        <div class="container">
+                            <div class="hilite-title p-lr20 m-tb20 text-left text-uppercase bdr-gray bdr-left">
+                                <strong>Value Additions</strong>
+                                <!-- <span class="text-black">Completed</span> -->
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa-solid fa-elevator"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">AUTO-DOOR BRANDED 2 ELEVATOR</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-plug-circle-bolt"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">24×7 POWER BACKUP FOR COMMON AREAS</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-sun"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">HEAT AND WATER PROOFING TREATMENT TO TERRACE</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-shield halved"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">24 HOURS SECURITY</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-car"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">CAR PARKING FOR ALL FLAT</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-droplet"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">24 HOURS WATER SUPPLY</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-cloud-rain"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">RAIN WATER HARVESTING SYSTEM</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-envelopes-bulk"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">INDIVIDUAL NAME PLATES & LETTERBOX</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-fire"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">FIRE SAFETY SYSTEM</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+            </section>
+
+
+            <section class="section-full p-lr120 m-b50 mglrl">
+
+                <div class="row p-lr60 leisure mglrl">
+                    <div class="container">
+                        <div class="hilite-title p-lr20 m-tb20 text-left text-uppercase bdr-gray bdr-left">
+                            <strong>leisure amenities</strong>
+                            <!-- <span class="text-black">Completed</span> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/1.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">AIR CONDITIONED CLUBHOUSE</h5><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/2.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">BANQUET HALL / MULTI-PURPOSE HALL</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/3.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">CHILDREN’S PLAY AREA</h5><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/4.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">LANDSCAPED GARDEN WITH SEATING</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/5.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">GYMNASIUM & YOGA AREA</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/6.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">SWIMMING POOL</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="sample-container flip-book-container" src="pdfbook/Kunj Riverside leaflet-100dpi.pdf"> -->
+
+                      
+                </div>
+
+
+                
+            </section>
+
+        </div>
+
+        <!-- CLIENT LOGO SECTION START -->
+        <div class="section-full p-tb40 bg-black square_shape4">
+            <div class="container">
+                <div class="section-content">
+
+                    <!-- TESTIMONIAL 4 START ON BACKGROUND -->
+                    <div class="section-content">
+                        <div class="row">
+                            <!-- <div class="col-md-4 col-sm-12">
+                               
+                                <div class="text-left">
+                                    <h2 class="text-uppercase font-36 text-white">Our Clients</h2>
+                                    <div class="wt-separator-outer">
+                                        <div class="wt-separator bg-white"></div>
+                                    </div>
+                                </div>
+                          
+                            </div> -->
+
+                            <div class="col-md-12 col-sm-12">
+                                <div class="section-content bg-black p-tb10">
+                                    <div class="owl-carousel home-client-carousel">
+
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l1.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l2.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l3.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l4.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l5.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l6.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l7.png"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CLIENT LOGO  SECTION End -->
+    </div>
+
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <footer class="main-footer">
+        <div class="auto-container">
+            <div class="widgets-section" style="display: flex;justify-content: center;">
+                <div class="row clearfix" style="width: 80%;">
+                    <div class="big-column col-lg-12 col-md-12 col-sm-12">
+                        <div class="row clearfix justify-content-center">
+                            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-widget logo-widget">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="images/logo-black.png" style="width: 200px;"
+                                                alt="" /></a>
+                                    </div>
+                                    <div class="text" style="width: 90%;text-align: justify;">CREATING LUXURIOUS
+                                        HOMES THAT ARE NOT ONLY BEAUTIFUL BUT ALSO SUSTAINABLE AND WELL ARCHITECTED.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+                                    <div class="footer-title">
+                                        <h2 style="color: #000;">Quick Links</h2>
+                                    </div>
+                                    <ul class="footer-lists" style="list-style: none;">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="#">Projects</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+                                    <div class="footer-title">
+                                        <h2 style="color: #000;">Projects</h2>
+                                    </div>
+                                    <ul class="footer-lists" style="list-style: none;">
+                                        <li><a href="panorama.html">Safalya Panorama</a></li>
+                                        <li><a href="rise.html">Safalya Rise</a></li>
+                                        <li><a href="bliss.html">Safalya Bliss</a></li>
+                                        <li><a href="bouganvilla.html">Bouganvilla </a></li>
+                                        <li><a href="riverscape.html">Kunj Riverscape</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-column col-lg-3 col-md-4 col-sm-12">
+                                <div class="footer-widget subscribe-widget">
+                                    <div class="footer-title">
+                                        <h2 style="color: #000;">Address</h2>
+                                    </div>
+                                    <div class="widget-content">
+                                        <!-- <div class="text">
+                                            </div> -->
+                                        <ul class="social-icon-two" style="list-style: none;">
+                                            <div style="display: flex;align-items: center;">
+                                                <li style="font-size: 20px;"><a href="tel:"><span
+                                                            class="fa fa-map-marker"></span></a></li>
+                                                <span class="widget-content"
+                                                    style="font-size: 14px;margin-left: 10px;color: #767676;">C-1,
+                                                    Nitiraj Apartment, 68 Suvarnapuri Society, Chikuwadi, Jetalpur
+                                                    Road, Vadodara</span>
+                                            </div>
+                                            <div style="display: flex;align-items: center;">
+                                                <li style="font-size: 20px;"><a href="tel:"><span
+                                                            class="fa fa-phone"></span></a></li>
+                                                <span class="widget-content"
+                                                    style="font-size: 14px;margin-left: 10px;color: #767676;"><a href="tel:9081444881">9081444881</a></span>
+                                            </div>
+                                            <div style="display: flex;align-items: center;">
+                                                <li style="font-size: 20px;"><a href="tel:"><span
+                                                            class="fa fa-envelope"></span></a></li>
+                                                <span class="widget-content"
+                                                    style="font-size: 14px;margin-left: 10px;color: #767676;"><a href="mailto:safalyacorporation@gmail.com">safalyacorporation@gmail.com</a></span>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="copyright" style="font-size: 16px;">&copy; Copyright
+                    <script>document.write(new Date().getFullYear())</script>. All Rights Reserved. Developed by
+                    <a href="https://devkrutitech.com" style="list-style: none;color: black;">
+                        <b>Devkrutitech</b></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- BUTTON TOP START -->
+    <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+
+    </div>
+
+    <!-- LOADING AREA START ===== -->
+    <!--<div class="loading-area">-->
+    <!--    <div class="containerr">-->
+    <!--        <div class="tt">-->
+    <!--            <img src="./images/logo-black.png" alt="" height="400" width="200" style="margin-bottom: 25px;">-->
+    <!--            <div class="animation">-->
+    <!--                <div class="animation-left"><span>SAFALYA GROUP</span></div>-->
+    <!--                <div class="animation-right"><span>SAFALYA GROUP</span></div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!-- LOADING AREA  END ====== -->
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-1.12.4.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+
+
+
+    <script src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+
+    <script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+    <script src="js/waypoints-sticky.min.js"></script><!-- COUNTERUP JS -->
+
+    <script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+
+    <script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+    <script src="js/jquery.owl-filter.js"></script>
+
+    <script src="js/stellar.min.js"></script><!-- PARALLAX BG IMAGE   -->
+    <script src="js/scrolla.min.js"></script><!-- ON SCROLL CONTENT ANIMTE   -->
+
+
+    <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="js/shortcode.js"></script><!-- SHORTCODE FUCTIONS  -->
+    <!-- REVOLUTION JS FILES -->
+
+    <script src="../plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="../plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="../plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>
+
+    <!-- REVOLUTION SLIDER SCRIPT FILES -->
+    <script src="js/rev-script-1.js"></script>
+    <script>
+        $(".img-wrapper").hover(
+            function () {
+                $(this).find(".img-overlay").animate({ opacity: 1 }, 600);
+            }, function () {
+                $(this).find(".img-overlay").animate({ opacity: 0 }, 600);
+            }
+        );
+
+        // Lightbox
+        var $overlay = $('<div id="overlay"></div>');
+        var $image = $("<img>");
+        var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
+        var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
+        var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+
+        // Add overlay
+        $overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
+        $("#gallery").append($overlay);
+
+        // Hide overlay on default
+        $overlay.hide();
+
+        // When an image is clicked
+        $(".img-overlay").click(function (event) {
+            // Prevents default behavior
+            event.preventDefault();
+            // Adds href attribute to variable
+            var imageLocation = $(this).prev().attr("href");
+            // Add the image src to $image
+            $image.attr("src", imageLocation);
+            // Fade in the overlay
+            $overlay.fadeIn("slow");
+        });
+
+        // When the overlay is clicked
+        $overlay.click(function () {
+            // Fade out the overlay
+            $(this).fadeOut("slow");
+        });
+
+        // When next button is clicked
+        $nextButton.click(function (event) {
+            // Hide the current image
+            $("#overlay img").hide();
+            // Overlay image location
+            var $currentImgSrc = $("#overlay img").attr("src");
+            // Image with matching location of the overlay image
+            var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+            // Finds the next image
+            var $nextImg = $($currentImg.closest(".image").next().find("img"));
+            // All of the images in the gallery
+            var $images = $("#image-gallery img");
+            // If there is a next image
+            if ($nextImg.length > 0) {
+                // Fade in the next image
+                $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+            } else {
+                // Otherwise fade in the first image
+                $("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
+            }
+            // Prevents overlay from being hidden
+            event.stopPropagation();
+        });
+
+        // When previous button is clicked
+        $prevButton.click(function (event) {
+            // Hide the current image
+            $("#overlay img").hide();
+            // Overlay image location
+            var $currentImgSrc = $("#overlay img").attr("src");
+            // Image with matching location of the overlay image
+            var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+            // Finds the next image
+            var $nextImg = $($currentImg.closest(".image").prev().find("img"));
+            // Fade in the next image
+            $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+            // Prevents overlay from being hidden
+            event.stopPropagation();
+        });
+
+        // When the exit button is clicked
+        $exitButton.click(function () {
+            // Fade out the overlay
+            $("#overlay").fadeOut("slow");
+        });
+    </script>
+    <script src="pdfbook/three.min.js"></script>
+    <script src="pdfbook/pdf.min.js"></script>
+    <script src="pdfbook/3dflipbook.min.js"></script>
+</body>
+
+
+
+
+</html>
