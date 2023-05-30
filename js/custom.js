@@ -302,7 +302,7 @@ All JavaScript fuctions Start
 		autoplayTimeout:2000,
 		//center: true,
 		nav:false,
-		dots: true,
+		dots: false,
 		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 		responsive:{
 			0:{
@@ -374,13 +374,13 @@ All JavaScript fuctions Start
 				items:3
 			},			
 			1152:{
-				items:4
+				items:3
 			},
 			1360:{
-				items:4
+				items:3
 			},
 			1366:{
-				items:5
+				items:3
 			}	
 		    }
 		})

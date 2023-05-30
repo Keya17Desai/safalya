@@ -4698,6 +4698,7 @@ ol.list-num-count.list-outline-none>li:before {
 -------------------------------------*/
 .testimonial-pic {
 	background: #FFF;
+	padding: 10px;
 	width: 100px;
 	height: 100px;
 	position: relative;
@@ -10359,7 +10360,7 @@ ol.commentlist li::after {
 
 .hilite-title strong {
 	display: block;
-	font-size: 80px;
+	font-size: 50px;
 	line-height: 80px;
 	font-weight: bold;
 	color: rgba(191, 191, 191, 0.3);
@@ -10368,7 +10369,7 @@ ol.commentlist li::after {
 .hilite-title span {
 	display: block;
 	font-size: 24px;
-	line-height: 24px;
+	line-height: 12px;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -10443,13 +10444,13 @@ ol.commentlist li::after {
 	}
 
 	.hilite-title strong {
-		font-size: 46px;
-		line-height: 46px;
+		font-size: 25px;
+		line-height: 25px;
 	}
 
 	.hilite-title span {
 		font-size: 18px;
-		line-height: 18px;
+		line-height: 20px;
 	}
 }
 
@@ -11632,6 +11633,7 @@ ol.commentlist li::after {
 
 
 .sidebar-contact{
+	display: none;
 	position:fixed;
 	top:50%;
 	left:-300px;
@@ -11693,10 +11695,15 @@ ol.commentlist li::after {
   .toggle.active:before{
 	content:'\f00d';
   }
+
+  
   
   @media screen and (max-width: 768px) {
 	.popup .popup-content{
 	  min-width: 300px!important;
+	}
+	.logo{
+		text-align: center;
 	}
 	.logo a img {
 	  height: 50px;
@@ -11743,4 +11750,31 @@ ol.commentlist li::after {
 	.content{
 	  padding:50px 50px;
 	}
+
+
+	#rev_slider_346_1_wrapper, #rev_slider_346_1 , .rev_slider,.rev_slider_wrapper, .forcefullwidth_wrapper_tp_banner{
+		height:350px!important;
+	}
+	.tp-caption{
+		top:-80px!important;
+		font-size: 15px!important;
+	}
   }
+
+  .float {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #25d366;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 100;
+}
+.my-float {
+	margin-top: 16px;
+}
