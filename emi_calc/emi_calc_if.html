@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> </title>
+
+    <link rel="stylesheet" type="text/css" href="/emi_calc/assets/emicalculator/fi000001.css" media="all" />
+
+    <script type="text/javascript" src="/emi_calc/assets/emicalculator/fi000002.js"></script>
+
+    <script type="text/javascript" src="/emi_calc/assets/emicalculator/indian_comma.js"></script>
+
+    <script type="text/javascript" src="/emi_calc/assets/emicalculator/fi000003.js"></script>
+
+
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            if (typeof(edButtons) !== 'undefined') {
+                edButtons[110] = new QTags.TagButton('code', 'code', '`', '`', 'c');
+                QTags._buttonsInit();
+            }
+
+            jQuery('#bbp_topic_title').bind('keydown.editor-focus', function(e) {
+                if (e.which !== 9)
+
+                    return;
+                if (!e.ctrlKey && !e.altKey && !e.shiftKey) {
+                    if (typeof(tinymce) !== 'undefined') {
+                        if (!tinymce.activeEditor.isHidden()) {
+                            var editor = tinymce.activeEditor.editorContainer;
+                            jQuery('#' + editor + ' td.mceToolbar > a').focus();
+                        } else {
+                            jQuery('textarea.bbp-the-content').focus();
+                        }
+                    } else {
+                        jQuery('textarea.bbp-the-content').focus();
+                    }
+
+                    e.preventDefault();
+                }
+            });
+            jQuery('#bbp_topic_tags').bind('keydown.editor-focus', function(e) {
+                if (e.which !== 9)
+
+                    return;
+                if (e.shiftKey && !e.ctrlKey && !e.altKey) {
+                    if (typeof(tinymce) !== 'undefined') {
+                        if (!tinymce.activeEditor.isHidden()) {
+                            var editor = tinymce.activeEditor.editorContainer;
+                            jQuery('#' + editor + ' td.mceToolbar > a').focus();
+                        } else {
+                            jQuery('textarea.bbp-the-content').focus();
+                        }
+                    } else {
+                        jQuery('textarea.bbp-the-content').focus();
+                    }
+
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        (function($) {
+            $(function() {
+                $(".widget form.bbp-login-form button#user-submit").each(function() {
+                    $(this).html($(this).html().toString().replace(String.fromCharCode(34), ""));
+                });
+            });
+        })(jQuery);
+    </script>
+
+    <style>
+        .s {
+            width: 95%;
+            margin: 0 auto;
+        }
+    </style>
+
+    
+    
+</head>
+
+
+
+<body>
+
+    <div class="s">
+
+        <div id="wrap">
+            <div class="main wow fadeInDown" data-wow-offset="0" data-wow-delay="0.6s">
+
+                <div id="container">
+
+                    <div id="content" class="clearfix">
+
+                        <div id="content-wrap" class="clearfix">
+
+                            <div id="primary" class="hfeed">
+
+                                <div class="post-7 page type-page status-publish hentry" id="post-7">
+
+                                    <div class="entry-content">
+
+                                        <div id="emidashboard">
+
+
+
+                                            <div class="cleardiv"></div>
+
+                                            <div id="emicalcalulatorinnerformwrapper">
+
+                                                <form id="emicalcalulatorform">
+
+                                                    <div id="emicalcalulatorinnerform">
+
+                                                        <div class="lamount">
+
+                                                            <label for="loanamount"><strong>Home Loan Amount</strong></label>
+
+                                                            <input id="loanamount" name="loanamount" value="25,00,000" type="text" />
+
+                                                            <span><img src="/emi_calc/assets/images/Rupee_Symbol.png"></span>
+                                                        </div>
+
+                                                        <div id="loanamountslider"></div>
+
+                                                        <div id="loanamountsteps" class="steps"> <span class="tick" style="left: 0%;">|<br />
+
+                                <span class="marker">0</span></span> <span class="tick" style="left: 25%;">|<br />
+
+                                <span class="marker">25L</span></span> <span class="tick" style="left: 50%;">|<br />
+
+                                <span class="marker">50L</span></span> <span class="tick" style="left: 75%;">|<br />
+
+                                <span class="marker">75L</span></span> <span class="tick" style="left: 100%;">|<br />
+
+                                <span class="marker">100L</span></span>
+                                                        </div>
+
+                                                        <div class="sep lint">
+
+                                                            <label for="loaninterest"><strong>Interest Rate</strong> </label>
+
+                                                            <input id="loaninterest" name="loaninterest" value="10.5" type="text" />
+
+                                                            <span>%</span>
+                                                        </div>
+
+                                                        <div id="loaninterestslider"></div>
+
+                                                        <div id="loanintereststeps" class="steps"> <span class="tick" style="left: 0%;">|<br />
+
+                                <span class="marker">5</span></span> <span class="tick" style="left: 16.67%;">|<br />
+
+                                <span class="marker">7.5</span></span> <span class="tick" style="left: 33.34%;">|<br />
+
+                                <span class="marker">10</span></span> <span class="tick" style="left: 50%;">|<br />
+
+                                <span class="marker">12.5</span></span> <span class="tick" style="left: 66.67%;">|<br />
+
+                                <span class="marker">15</span></span> <span class="tick" style="left: 83.34%;">|<br />
+
+                                <span class="marker">17.5</span></span> <span class="tick" style="left: 100%;">|<br />
+
+                                <span class="marker">20</span></span>
+                                                        </div>
+
+                                                        <div class="sep lterm">
+
+                                                            <label for="loanterm"><strong>Loan Tenure</strong> </label>
+
+                                                            <input id="loanterm" name="loanterm" value="20" type="text" />
+
+                                                        </div>
+
+                                                        <div id="tenurechoice">
+
+                                                            <div id="lyrs">
+
+                                                                <input name="loantenure" id="loanyears" value="loanyears" checked="checked" type="radio" />
+
+                                                                <label id="loanyearslabel" for="loanyears">Years</label>
+
+                                                            </div>
+
+                                                            <div id="lmths">
+
+                                                                <input name="loantenure" id="loanmonths" value="loanmonths" type="radio" />
+
+                                                                <label id="loanmonthslabel" for="loanmonths">Months</label>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="cleardiv"></div>
+
+                                                        <div id="loantermslider"></div>
+
+                                                        <div id="loantermsteps" class="steps"> <span class="tick" style="left: 0%;">|<br />
+
+                                <span class="marker">0</span></span> <span class="tick" style="left: 16.67%;">|<br />
+
+                                <span class="marker">5</span></span> <span class="tick" style="left: 33.33%;">|<br />
+
+                                <span class="marker">10</span></span> <span class="tick" style="left: 50%;">|<br />
+
+                                <span class="marker">15</span></span> <span class="tick" style="left: 66.67%;">|<br />
+
+                                <span class="marker">20</span></span> <span class="tick" style="left: 83.33%;">|<br />
+
+                                <span class="marker">25</span></span> <span class="tick" style="left: 100%;">|<br />
+
+                                <span class="marker">30</span></span>
+                                                        </div>
+
+                                                        <div class="cleardiv"></div>
+
+                                                        <div class="toggle-hidden">
+
+                                                            <div class="sep escheme">
+
+                                                                <label for="emischeme"><strong>EMI Scheme</strong> </label>
+
+                                                            </div>
+
+                                                            <div id="emischemes">
+
+                                                                <div id="eadvance">
+
+                                                                    <input name="emischeme" id="emiadvance" value="emiadvance" checked="checked" type="radio" />
+
+                                                                    <label id="emiadvancelabel" for="emiadvance">EMI in advance</label>
+
+                                                                </div>
+
+                                                                <div id="earrears">
+
+                                                                    <input name="emischeme" id="emiarrears" value="emiarrears" type="radio" />
+
+                                                                    <label id="emiarrearslabel" for="emiarrears">EMI in arrears</label>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="cleardiv"></div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </form>
+
+                                                <div id="emipaymentsummary">
+
+                                                    <div id="emiamount">
+
+                                                        <h4>Monthly Payment (EMI)</h4>
+
+                                                        <p><img src="/emi_calc/assets/images/Rupee_Symbol.png" alt=""><span>24,959</span></p>
+
+                                                    </div>
+
+                                                    <div id="emitotalinterest">
+
+                                                        <h4>Total Interest Payable</h4>
+
+                                                        <p><img src="/emi_calc/assets/images/Rupee_Symbol.png" alt=""><span>34,90,279</span></p>
+
+                                                    </div>
+
+                                                    <div id="emitotalamount" class="column-last">
+
+                                                        <h4>Total Payment<br /> (Principal + Interest)</h4>
+
+                                                        <p><img src="/emi_calc/assets/images/Rupee_Symbol.png" alt=""><span>59,90,279</span></p>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div id="emipiechart" class="highcharts-container"></div>
+
+                                                <div class="cleardiv"></div>
+
+                                            </div>
+
+                                        </div>
+
+                                       
+                                      
+
+
+                                        <div class="cleardiv"></div>
+
+                                        <div id="emipaymentdetails">
+
+                                            <div id="EMIPaymentscheduleheader">
+
+                                                <label for="startmonthyear">Schedule showing EMI payments starting from</label>
+
+                                                <input id="startmonthyear" name="startmonthyear" value="" type="text" />
+
+                                            </div>
+
+                                            <div id="emibarchart" class="highcharts-container"></div>
+
+                                            <div id="emipaymenttable"></div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
