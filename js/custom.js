@@ -440,9 +440,9 @@ All JavaScript fuctions Start
 	function home_client_carousel(){
 	jQuery('.home-client-carousel').owlCarousel({
 		loop:true,
-		autoplay:2000,
+		autoplay:1500,
 		margin:10,
-		nav:true,
+		nav:false,
 		dots: false,
 		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 		responsive:{
