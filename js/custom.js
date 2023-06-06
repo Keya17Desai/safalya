@@ -98,7 +98,11 @@ All JavaScript fuctions Start
           },
           image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-          }
+          },
+		  zoom: {
+			enabled: true
+		}
+
        });
 	}
 
@@ -286,6 +290,10 @@ All JavaScript fuctions Start
 		autoplay:true,
 		autoplayTimeout:2000,
 		margin:30,
+
+
+
+		
 		nav:true,
 		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 		items:1,
