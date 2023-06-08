@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta name="description" content="" />
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/faviconn.png" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/faviconn.png" />
+
+    <!-- PAGE TITLE HERE -->
+    <title>Safalya Panorama</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- [if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+	<![endif] -->
+
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css" />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/loader.css">
+
+
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css">
+    <!-- LOADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/loader.min.css">
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- REVOLUTION SLIDER 4 STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/rev-slider-4.css">
+
+
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link rel="stylesheet" type="text/css" href="../plugins/revolution/revolution/css/navigation.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,800,800i,900"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i&amp;subset=latin-ext" rel="stylesheet">
+
+    <style>
+        #gallery {
+            padding-top: 40px;
+        }
+
+        @media screen and (min-width: 991px) {
+            #gallery {
+                padding: 60px 30px 0 30px;
+            }
+        }
+
+        .value div .wt-icon-box-wraper {
+            height: 120px;
+        }
+
+        .leisure div .wt-icon-box-wraper {
+            height: 200px;
+        }
+
+        .img-wrapper {
+            position: relative;
+            margin-top: 15px;
+        }
+
+        .img-wrapper img {
+            width: 100%;
+        }
+
+        .img-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+        }
+
+        .img-overlay i {
+            color: #fff;
+            font-size: 3em;
+        }
+
+        #overlay {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #overlay img {
+            margin: 0;
+            width: 95%;
+            height: auto;
+            -o-object-fit: contain;
+            object-fit: contain;
+            padding: 5%;
+        }
+
+        @media screen and (min-width: 768px) {
+            #overlay img {
+                width: 60%;
+            }
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            #overlay img {
+                width: 50%;
+            }
+        }
+
+        #nextButton {
+            color: #fff;
+            font-size: 2em;
+            transition: opacity 0.8s;
+        }
+
+        #nextButton:hover {
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 768px) {
+            #nextButton {
+                font-size: 3em;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .mglrl {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        #prevButton {
+            color: #fff;
+            font-size: 2em;
+            transition: opacity 0.8s;
+        }
+
+        #prevButton:hover {
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 768px) {
+            #prevButton {
+                font-size: 3em;
+            }
+        }
+
+        #exitButton {
+            color: #fff;
+            font-size: 2em;
+            transition: opacity 0.8s;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        #exitButton:hover {
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 768px) {
+            #exitButton {
+                font-size: 3em;
+            }
+        }
+    </style>
+
+    <style>
+        .sample-container {
+            box-sizing: border-box;
+            padding-top: min(60%, 80vh);
+            position: relative;
+            background-color: #fafafa;
+            margin-bottom: 25px;
+        }
+
+        .sample-container>iframe {
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wraper">
+
+        <!-- HEADER START -->
+        <header class="site-header header-style-1  nav-wide">
+
+            <div class="sticky-header main-bar-wraper">
+                <div class="main-bar bg-white p-t10">
+                    <div class="container">
+                        <div class="logo-header">
+                            <div class="logo-header-inner logo-header-one">
+                                <a href="index.html">
+                                    <img src="images/logo-black.png" width="171" height="49" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <button data-target=".header-nav" data-toggle="collapse" type="button"
+                            class="navbar-toggle collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="header-nav navbar-collapse collapse">
+                            <ul class=" nav navbar-nav">
+                                <li class="active">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                </li>
+                                <li>
+                                <li>
+                                    <a href="about.html">About us</a>
+                                </li>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Projects</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="javascript:;">Ongoing Projects</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="panorama.html">Safalya Panorama</a></li>
+                                                <li><a href="rise.html">Safalya Rise</a></li>
+                                                <li><a href="bouganvilla.html">Bouganvilla</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Completed Projects</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="arcade.html">Safalya Arcade</a></li>
+                                                <li><a href="bliss.html">Safalya Bliss</a></li>
+                                                <li><a href="riverscape.html">Kunj Riverscape</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="emi_calc/emi_calc_if copy.html">EMI Calculator</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- HEADER END -->
+
+        <!-- CONTENT START -->
+        <div class="page-content">
+
+            <!-- SLIDER START -->
+            <div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header"
+                data-source="gallery" style="background:#eeeeee;padding:0px;">
+                
+            </div>
+            <!-- SLIDER END -->
+
+
+            <!-- WELCOME SECTION START -->
+            <div class="section-full p-t90 bg-gray">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-12 text-uppercase text-black">
+                                <h2 class="font-40">
+                                    Safalya Panorama
+                                </h2>
+                                <span class="font-30 font-weight-300">LIVE THE VIEW</span>
+                                <p></p>
+                                <p class="text-align-justify">Be among the first ones to own 4-side open apartments in
+                                    Kalali. With every home opening outward, the Safalya Panorama lets you be in tune
+                                    with nature. The campus being shared between only 52 families highlights the
+                                    emphasis on exclusivity. The straight lines with smooth curved edges create a
+                                    delightful contrast which add a touch of class to this stylish piece of craft.
+                                    Cornered by two 18 mtr roads, your home will be close to all the urban utilities and
+                                    at the same time will also be away from the chaos of the city. With 75% perimeter
+                                    exposed to the sky, a feeling of tranquillity is given.
+                                </p>
+                                <!-- <button class="m-b15 site-button m-r15 text-uppercase letter-spacing-2" type="button">Pramary button</button> -->
+                                <a href="https://drive.google.com/file/d/1BtodbtpmF6K5FNCNcRMSG_9Fsh_q6iqb/view?usp=share_link"
+                                    target="_blank" class="btn-half site-button button-lg m-b15"><span>Download
+                                        Brochure</span><em></em></a>
+                            </div>
+
+                            <div class="col-md-7 col-sm-12">
+                                <div class="m-carousel-1 m-l100">
+                                    <div class="owl-carousel home-carousel-1 owl-btn-vertical-center">
+                                        <!-- COLUMNS 1 -->
+                                        <div class="item">
+                                            <div class="ow-img wt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img
+                                                        src="images/projects/Panorama Final views/4.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!-- COLUMNS 2 -->
+                                        <div class="item">
+                                            <div class="ow-img wt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img
+                                                        src="images/projects/Panorama Final views/5.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!-- COLUMNS 3 -->
+                                        <div class="item">
+                                            <div class="owl-img wt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img
+                                                        src="images/projects/Panorama Final views/7.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!-- COLUMNS 4 -->
+                                        <div class="item">
+                                            <div class="ow-img wt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img
+                                                        src="images/projects/Panorama Final views/8.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!-- COLUMNS 5 -->
+                                        <div class="item">
+                                            <div class="ow-img wt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img
+                                                        src="images/projects/Panorama Final views/9.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="hilite-title p-lr20 m-tb20 text-right text-uppercase bdr-gray bdr-right">
+                            <strong>18 Year</strong>
+                            <span class="text-black">Experience Working</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+           <!-- 3d view section start -->
+           <section class="section-full m-b80" id="gallery">
+            <div class="container">
+                <div id="image-gallery">
+                    <div class="row float-left">
+                        <div class="container">
+                            <div class="hilite-title p-lr20 m-tb20 text-left text-uppercase bdr-gray bdr-left">
+                                <strong>Views</strong>
+                                <!-- <span class="text-black">Completed</span> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image">
+                            <div class="img-wrapper">
+                                <a href="images/Panorama Final viewscompressed/2.jpg"><img
+                                        src="images/Panorama Final viewscompressed/2.jpg"
+                                        class="img-responsive"></a>
+                                <div class="img-overlay">
+                                    <i class="fa fa-camera" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image">
+                            <div class="img-wrapper">
+                                <a href="images/Panorama Final viewscompressed/3.jpg"><img
+                                        src="images/Panorama Final viewscompressed/3.jpg"
+                                        class="img-responsive"></a>
+                                <div class="img-overlay">
+                                    <i class="fa fa-camera" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image">
+                            <div class="img-wrapper">
+                                <a href="images/Panorama Final viewscompressed/6.jpg"><img
+                                        src="images/Panorama Final viewscompressed/6.jpg"
+                                        class="img-responsive"></a>
+                                <div class="img-overlay">
+
+                                    <i class="fa fa-camera" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image">
+                            <div class="img-wrapper">
+                                <a href="images/Panorama Final viewscompressed/4.jpg"><img
+                                        src="images/Panorama Final viewscompressed/4.jpg"
+                                        class="img-responsive"></a>
+                                <div class="img-overlay">
+                                    <i class="fa fa-camera" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image">
+                            <div class="img-wrapper">
+                                <a href="images/Panorama Final viewscompressed/7.jpg"><img
+                                        src="images/Panorama Final viewscompressed/7.jpg"
+                                        class="img-responsive"></a>
+                                <div class="img-overlay">
+                                    <i class="fa fa-camera" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image">
+                            <div class="img-wrapper">
+                                <a href="images/Panorama Final viewscompressed/8.jpg"><img
+                                        src="images/Panorama Final viewscompressed/8.jpg"
+                                        class="img-responsive"></a>
+                                <div class="img-overlay">
+                                    <i class="fa fa-camera" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image">
+                            <div class="img-wrapper">
+                                <a href="images/Panorama Final viewscompressed/9.jpg"><img
+                                        src="images/Panorama Final viewscompressed/9.jpg"
+                                        class="img-responsive"></a>
+                                <div class="img-overlay">
+                                    <i class="fa fa-camera" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image">
+                            <div class="img-wrapper">
+                                <a href="images/Panorama Final viewscompressed/5.jpg"><img
+                                        src="images/Panorama Final viewscompressed/5.jpg"
+                                        class="img-responsive"></a>
+                                <div class="img-overlay">
+                                    <i class="fa fa-camera" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                    </div><!-- End row -->
+                </div><!-- End image gallery -->
+            </div><!-- End container -->
+        </section>
+
+        <!--3d view section ends  -->
+<!-- layout section start -->
+            <section class="section-full m-b80" id="gallery">
+                <div class="container">
+                    <div id="image-gallery">
+                        <div class="row float-left">
+                            <div class="container">
+                                <div class="hilite-title p-lr20 m-tb20 text-left text-uppercase bdr-gray bdr-left">
+                                    <strong>Layout</strong>
+                                    <!-- <span class="text-black">Completed</span> -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 image">
+                                <div class="img-wrapper">
+                                    <a href="images/Panorama Layout And Floor Plan/Typical-floor-plan22-Panorama.png"><img
+                                            src="images/Panorama Layout And Floor Plan/Typical-floor-plan22-Panorama.png"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fa fa-camera"></i>&nbsp;<p style="color:#fff;font-size: 16px;vertical-align: middle;margin-top: 18px;">First Floor Plan</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 image">
+                                <div class="img-wrapper">
+                                    <a href="images/Panorama Layout And Floor Plan/Typical-Floor-Plan-Panorama.png"><img
+                                            src="images/Panorama Layout And Floor Plan/Typical-Floor-Plan-Panorama.png"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fa fa-camera" aria-hidden="true"></i>&nbsp;<p style="color:#fff;font-size: 16px;vertical-align: middle;margin-top: 18px;">Typical Floor Plan 2</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 image">
+                                <div class="img-wrapper">
+                                    <a href="images/Panorama Layout And Floor Plan/Ground-Floor-Plan-Panorama.png"><img
+                                            src="images/Panorama Layout And Floor Plan/Ground-Floor-Plan-Panorama.png"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fa fa-camera" aria-hidden="true"></i>&nbsp;<p style="color:#fff;font-size: 16px;vertical-align: middle;margin-top: 18px;">Ground Floor Plan</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 image">
+                                <div class="img-wrapper">
+                                    <a href="images/Panorama Layout And Floor Plan/1st-Floor-Panorama.png"><img
+                                            src="images/Panorama Layout And Floor Plan/1st-Floor-Panorama.png"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fa fa-camera" aria-hidden="true"></i>&nbsp;<p style="color:#fff;font-size: 16px;vertical-align: middle;margin-top: 18px;">1st Floor Plan</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 image">
+                                <div class="img-wrapper">
+                                    <a href="images/Panorama Layout And Floor Plan/terrace-plan-Panorama.png"><img
+                                            src="images/Panorama Layout And Floor Plan/terrace-plan-Panorama.png"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+
+                                        <i class="fa fa-camera" aria-hidden="true"></i>&nbsp;<p style="color:#fff;font-size: 16px;vertical-align: middle;margin-top: 18px;">Terrace Floor Plan</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- End row -->
+                    </div><!-- End image gallery -->
+                </div><!-- End container -->
+            </section>
+<!-- layout section end -->
+
+
+
+            <section class="section-full p-lr120 m-b50 mglrl"
+                style="background-image:url(images/background/ptn-1.png);">
+
+                <div class="section-content m-b50 p-lr60 bg-repeat mglrl">
+
+                    <div class="row value">
+                        <div class="container">
+                            <div class="hilite-title p-lr20 m-tb20 text-left text-uppercase bdr-gray bdr-left">
+                                <strong>Value Additions</strong>
+                                <!-- <span class="text-black">Completed</span> -->
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa-solid fa-elevator"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">AUTO-DOOR BRANDED 2 ELEVATOR</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa-solid fa-elevator"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">24×7 POWER BACKUP FOR COMMON AREAS</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa-solid fa-elevator"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">GRAND ENTRANCE LOBBY</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-plug-circle-bolt"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">24 HOURS SECURITY</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-sun"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">24 HOURS WATER SUPPLY</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-shield halved"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">ALLOTED CAR PARKING FOR ALL FLAT</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-car"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">FIRE SAFETY SYSTEM</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-droplet"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">RAIN WATER HARVESTING SYSTEM</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-cloud-rain"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">DEDICATED SPACE FOR AC OUTER UNITS</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <span class="icon-cell text-primary"><i class="fa fa-envelopes-bulk"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">CCTV SURVEILLANCE</h5>
+                                    <!-- <p>typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces and layouts.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- new leisure ammenties addition -->
+                        <!-- <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="wt-icon-box-wraper bx-style-1 p-a20 left bg-white">
+                                <div class="wt-icon-box-xs text-primary bg-white radius bdr-2 ">
+                                    <div class="wt-icon-box-sm m-b20">
+                                        <span class="icon-cells"><img src="images/leisureamenities/1.png" /></span>
+                                    </div>
+                                </div>
+                                <div class="icon-content">
+                                    <h5 class="wt-tilte text-uppercase  letter-spacing-2 font-weight-800">AIR CONDITIONED CLUBHOUSE</h5>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="section-full p-lr120 m-b50 mglrl">
+
+                <div class="row p-lr60 leisure mglrl">
+                    <div class="container">
+                        <div class="hilite-title p-lr20 m-tb20 text-left text-uppercase bdr-gray bdr-left">
+                            <strong>leisure amenities</strong>
+                            <!-- <span class="text-black">Completed</span> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/1.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">4-side open home</h5><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/2.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Manicured green lawns</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/3.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Tranquil environs</h5><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/4.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">In campus avenues for fun</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/5.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Handpicked leisure on ground</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/6.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Recreational amenities on terrace</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/6.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Lush green landscaping</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/6.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Landscaped garden</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/6.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Indoor games area</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/6.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Kids play area</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/6.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Swimming pool</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/6.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Gymnasium & yoga area</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/6.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Banquet hall</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 m-b30">
+                        <div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
+                            <div class="wt-icon-box-sm bg-primary m-b20" style="background-color: #ECECEC;">
+                                <span class="icon-cell text-white"><img src="images/leisureamenities/6.png" /></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase letter-spacing-2 font-weight-800">Lounge cum AV room</h5>
+                            </div>
+                        </div>
+                    </div>
+                  
+
+
+                    <!-- <div class="sample-container flip-book-container" src="pdfbook/Kunj Riverside leaflet-100dpi.pdf"> -->
+
+
+                </div>
+
+
+
+            </section>
+
+            <!-- WHO WE ARE SECTION START -->
+            <div class="section-full p-lr120 p-t140 bg-repeat mglrl"
+                style="background-image:url(images/background/ptn-1.png);">
+                <div class="container-fluid p-lr120 mglrl">
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="m-b50">
+                                <!-- TITLE START -->
+                                <div class="section-head">
+                                    <h3>SPECIFICATIONS</h3>
+                                    <div class="wt-separator-outer">
+                                        <div class="wt-separator bg-black"></div>
+                                    </div>
+                                </div>
+                                <!-- TITLE END -->
+
+                                <!-- ACCORDIAN  BACKGROUND GRAY -->
+                                <div class="section-content p-b30">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="wt-accordion acc-bg-gray" id="accordion5">
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseOne5"
+                                                                data-parent="#accordion5">
+                                                                STRUCTURE
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseOne5" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Earthquake resistant R.C.C.
+                                                            Frame
+                                                            structure.<br>
+                                                            • Floor-Ceiling Height: 11’6″(Commercial Units); 10’0″
+                                                            (Residential
+                                                            Units).Earthquake resistant RCC frame structure as per
+                                                            structure
+                                                            design.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseTwo5"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                FLOORING
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseTwo5" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• High Quality Double charged
+                                                            vitrified
+                                                            tiles.<br>
+                                                            • Anti-skid vitrified tiles in all Balconies.<br>
+                                                            • Heat & Water Proofing Treatment on terrace.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseThree5"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                KITCHEN
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseThree5" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Granite top platform with
+                                                            S.S. sink.<br>
+                                                            • Dado wall tiles upto lintel level.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseThree6"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                DOORS / WINDOWS
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseThree6" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Main Door with 4 ft wide good
+                                                            quality wooden box frame & veneer panelling on both
+                                                            side.<br>
+                                                            • Internal flush door with both side laminated.<br>
+                                                            • Powder coated aluminium sliding window with reflective
+                                                            glass & mosquito net.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="wt-accordion acc-bg-gray" id="accordion5">
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseOne7"
+                                                                data-parent="#accordion5">
+                                                                bathroom
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseOne7" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Premium Ceramic tiles upto
+                                                            lintel level with anti skid tiles in flooring.<br>
+                                                            • Branded quality bath fittings & sanitary ware.<br>
+                                                            • Granite counter with ceramic fittings.<br>
+                                                            • Geyser points in all bedrooms.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseTwo8"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                electricals
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseTwo8" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Concealed copper ISi
+                                                            wiring/M.C.B/E.L.C.B & Branded modular switches with
+                                                            sufficient
+                                                            electrical points.<br>
+                                                            • Provision for T.V. & internet point at convenient
+                                                            location.<br>
+                                                            •3-Phase electric connection.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseThree9"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                WALL FINISH
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseThree9" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• 2 Coat Wall putty with primer
+                                                            on internal walls.<br>
+                                                            • Double coat plaster with weather proof paints on exterior
+                                                            walls.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel wt-panel">
+                                                    <div class="acod-head">
+                                                        <h6 class="acod-title text-uppercase">
+                                                            <a data-toggle="collapse" href="#collapseThree10"
+                                                                class="collapsed" data-parent="#accordion5">
+                                                                WASH AREA
+                                                                <span class="indicator"><i
+                                                                        class="fa fa-plus"></i></span>
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseThree10" class="acod-body collapse">
+                                                        <div class="acod-content p-tb15">• Glaze tiles upto parapet
+                                                            level & Kota stone flooring with provision of washing
+                                                            machine
+                                                            electric & plumbing point.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="container">
+                        <div class="hilite-title p-lr20 m-tb20 text-left text-uppercase bdr-gray bdr-left">
+                            <strong>30+ Projects</strong>
+                            <span class="text-black">Completed</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+
+            <div class="section-full p-tb80">
+                <!-- LOCATION BLOCK-->
+                <div class="container">
+                    <!-- TITLE START -->
+                    <div class="section-head text-left text-black">
+                        <h2 class="text-uppercase font-36">Where to Find us </h2>
+                        <div class="wt-separator-outer">
+                            <div class="wt-separator bg-black"></div>
+                        </div>
+                    </div>
+                    <!-- TITLE END -->
+                    <!-- GOOGLE MAP & CONTACT FORM -->
+                    <div class="section-content">
+                        <!-- CONTACT FORM-->
+                        <div class="wt-box">
+                            <form class="contact-form cons-contact-form" method="post"
+                                action="contact.php">
+                                <div class="contact-one p-a40 p-r150">
+                                    <div class="form-group">
+                                        <input name="username" type="text" required class="form-control"
+                                            placeholder="Name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input name="email" type="text" class="form-control" required
+                                            placeholder="Email">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea name="message" rows="3" class="form-control " required
+                                            placeholder="Message"></textarea>
+                                    </div>
+
+                                    <button name="submit" type="submit" value="Submit"
+                                        class="site-button black radius-no text-uppercase">
+                                        <span class="font-12 letter-spacing-5">Submit</span>
+                                    </button>
+
+                                    <div class="contact-info bg-black text-white p-a30">
+                                        <div class="wt-icon-box-wraper left p-b30">
+                                            <div class="icon-sm"><i class="iconmoon-smartphone-1"></i></div>
+                                            <div class="icon-content text-white ">
+                                                <h5 class="m-t0 text-uppercase">Phone number</h5>
+                                                <p>90814 44881, 90814 44882</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="wt-icon-box-wraper left p-b30">
+                                            <div class="icon-sm"><i class="iconmoon-email"></i></div>
+                                            <div class="icon-content text-white">
+                                                <h5 class="m-t0  text-uppercase">Email address</h5>
+                                                <p>safalyacorporation@gmail.com</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="wt-icon-box-wraper left p-b30">
+                                            <div class="icon-sm"><i class="iconmoon-travel"></i></div>
+                                            <div class="icon-content text-white">
+                                                <h5 class="m-t0  text-uppercase">Address info</h5>
+                                                <p>Safalya Panorama, Opp. Cloud 9, Kalali-Talsat Main Road, Kalali, Vadodara</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="wt-icon-box-wraper left">
+                                            <div class="icon-sm"><i class="iconmoon-travel"></i></div>
+                                            <div class="icon-content text-white">
+                                                <h5 class="m-t0  text-uppercase">RERA NUMBER</h5>
+                                                <p>PR/GJ/VADODARA/VADODARA/Vadodara Municipal Corporation/MN2014 A10101/270922</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-full" >
+                <div class="gmap-outline">
+                    <!-- <div id="gmap_canvas4" class="google-map"></div> -->
+                    <!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1I9y4yYip5j5rmSbrX69BhGfpQm0WVEo&ehbc=2E312F" width="640" height="480"></iframe> -->
+                    <iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.732821778859!2d73.16322511744384!3d22.2502138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc7238f9aa209%3A0xe8f7ae468dbd4beb!2sSafalya%20Panorama!5e0!3m2!1sen!2sin!4v1685473921617!5m2!1sen!2sin" style="width: 100%;margin-top: 50px;" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CLIENT LOGO SECTION START -->
+        <div class="section-full p-tb40 bg-black square_shape4">
+            <div class="container">
+                <div class="section-content">
+
+                    <!-- TESTIMONIAL 4 START ON BACKGROUND -->
+                    <div class="section-content">
+                        <div class="row">
+                            <!-- <div class="col-md-4 col-sm-12">
+                               
+                                <div class="text-left">
+                                    <h2 class="text-uppercase font-36 text-white">Our Clients</h2>
+                                    <div class="wt-separator-outer">
+                                        <div class="wt-separator bg-white"></div>
+                                    </div>
+                                </div>
+                          
+                            </div> -->
+
+                            <div class="col-md-12 col-sm-12">
+                                <div class="section-content bg-black p-tb10">
+                                    <div class="owl-carousel home-client-carousel">
+
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l1.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l2.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l3.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l4.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>  
+
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l6.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="ow-client-logo">
+                                                <div class="client-logo client-logo-media">
+                                                    <a href="javascript:void(0);"><img src="images/l7.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CLIENT LOGO  SECTION End -->
+    </div>
+
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <footer class="main-footer">
+        <div class="auto-container">
+            <div class="widgets-section" style="display: flex;justify-content: center;">
+                <div class="row clearfix" style="width: 80%;">
+                    <div class="big-column col-lg-12 col-md-12 col-sm-12">
+                        <div class="row clearfix justify-content-center">
+                            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-widget logo-widget">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="images/logo-black.png" style="width: 200px;"
+                                                alt="" /></a>
+                                    </div>
+                                    <div class="text" style="width: 90%;text-align: justify;">CREATING LUXURIOUS
+                                        HOMES THAT ARE NOT ONLY BEAUTIFUL BUT ALSO SUSTAINABLE AND WELL ARCHITECTED.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+                                    <div class="footer-title">
+                                        <h2 style="color: #000;">Quick Links</h2>
+                                    </div>
+                                    <ul class="footer-lists" style="list-style: none;">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="#">Projects</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+                                    <div class="footer-title">
+                                        <h2 style="color: #000;">Projects</h2>
+                                    </div>
+                                    <ul class="footer-lists" style="list-style: none;">
+                                        <li><a href="panorama.html">Safalya Panorama</a></li>
+                                        <li><a href="rise.html">Safalya Rise</a></li>
+                                        <li><a href="bliss.html">Safalya Bliss</a></li>
+                                        <li><a href="bouganvilla.html">Bouganvilla </a></li>
+                                        <li><a href="riverscape.html">Kunj Riverscape</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-column col-lg-3 col-md-4 col-sm-12">
+                                <div class="footer-widget subscribe-widget">
+                                    <div class="footer-title">
+                                        <h2 style="color: #000;">Address</h2>
+                                    </div>
+                                    <div class="widget-content">
+                                        <!-- <div class="text">
+                                            </div> -->
+                                        <ul class="social-icon-two" style="list-style: none;">
+                                            <div style="display: flex;align-items: center;">
+                                                <li style="font-size: 20px;"><a href="tel:"><span
+                                                            class="fa fa-map-marker"></span></a></li>
+                                                <span class="widget-content"
+                                                    style="font-size: 14px;margin-left: 10px;color: #767676;">C-1,
+                                                    Nitiraj Apartment, 68 Suvarnapuri Society, Chikuwadi, Jetalpur
+                                                    Road, Vadodara</span>
+                                            </div>
+                                            <div style="display: flex;align-items: center;">
+                                                <li style="font-size: 20px;"><a href="tel:"><span
+                                                            class="fa fa-phone"></span></a></li>
+                                                <span class="widget-content"
+                                                    style="font-size: 14px;margin-left: 10px;color: #767676;"><a
+                                                        href="tel:9081444881">9081444881</a></span>
+                                            </div>
+                                            <div style="display: flex;align-items: center;">
+                                                <li style="font-size: 20px;"><a href="tel:"><span
+                                                            class="fa fa-envelope"></span></a></li>
+                                                <span class="widget-content"
+                                                    style="font-size: 14px;margin-left: 10px;color: #767676;"><a
+                                                        href="mailto:safalyacorporation@gmail.com">safalyacorporation@gmail.com</a></span>
+                                            </div>
+                                            <div style="display: flex;align-items: center;">
+                                                <br>
+                                                <li style="font-size: 20px;"><a href="https://instagram.com/safalyagroup"><span
+                                                            class="fa fa-instagram"></span></a></li> &nbsp;  |  &nbsp;
+                                                <li style="font-size: 20px;"><a href="https://facebook.com/safalyarise"><span
+                                                            class="fa fa-facebook"></span></a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="copyright" style="font-size: 16px;">&copy; Copyright
+                    <script>document.write(new Date().getFullYear())</script>. All Rights Reserved. Developed by
+                    <a href="https://devkrutitech.com" style="list-style: none;color: black;">
+                        <b>Devkrutitech</b></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- BUTTON TOP START -->
+    <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+
+    </div>
+
+    <div class="loading-area">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+            <svg id="triangle" width="140px" height="140px" viewBox="-3 -4 39 39">
+              <polygon fill="#fff" stroke="#000" stroke-width="2" points="16,0 32,32 0,32"></polygon>
+            </svg>
+        </div>
+    </div>
+    <!-- LOADING AREA START ===== -->
+    <!--<div class="loading-area">-->
+    <!--    <div class="containerr">-->
+    <!--        <div class="tt">-->
+    <!--            <img src="./images/logo-black.png" alt="" height="400" width="200" style="margin-bottom: 25px;">-->
+    <!--            <div class="animation">-->
+    <!--                <div class="animation-left"><span>SAFALYA GROUP</span></div>-->
+    <!--                <div class="animation-right"><span>SAFALYA GROUP</span></div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!-- LOADING AREA  END ====== -->
+    <a href="https://api.whatsapp.com/send?phone=9081444881" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-1.12.4.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+
+
+
+    <script src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+
+    <script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+    <script src="js/waypoints-sticky.min.js"></script><!-- COUNTERUP JS -->
+
+    <script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+
+    <script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+    <script src="js/jquery.owl-filter.js"></script>
+
+    <script src="js/stellar.min.js"></script><!-- PARALLAX BG IMAGE   -->
+    <script src="js/scrolla.min.js"></script><!-- ON SCROLL CONTENT ANIMTE   -->
+
+
+    <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="js/shortcode.js"></script><!-- SHORTCODE FUCTIONS  -->
+    <!-- REVOLUTION JS FILES -->
+
+    <script src="../plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="../plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="../plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>
+
+    <!-- REVOLUTION SLIDER SCRIPT FILES -->
+    <script src="js/rev-script-1.js"></script>
+    <script>
+        $(".img-wrapper").hover(
+            function () {
+                $(this).find(".img-overlay").animate({ opacity: 1 }, 600);
+            }, function () {
+                $(this).find(".img-overlay").animate({ opacity: 0 }, 600);
+            }
+        );
+
+        // Lightbox
+        var $overlay = $('<div id="overlay"></div>');
+        var $image = $("<img>");
+        var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
+        var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
+        var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+
+        // Add overlay
+        $overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
+        $("#gallery").append($overlay);
+
+        // Hide overlay on default
+        $overlay.hide();
+
+        // When an image is clicked
+        $(".img-overlay").click(function (event) {
+            // Prevents default behavior
+            event.preventDefault();
+            // Adds href attribute to variable
+            var imageLocation = $(this).prev().attr("href");
+            // Add the image src to $image
+            $image.attr("src", imageLocation);
+            // Fade in the overlay
+            $overlay.fadeIn("slow");
+        });
+
+        // When the overlay is clicked
+        $overlay.click(function () {
+            // Fade out the overlay
+            $(this).fadeOut("slow");
+        });
+
+        // When next button is clicked
+        $nextButton.click(function (event) {
+            // Hide the current image
+            $("#overlay img").hide();
+            // Overlay image location
+            var $currentImgSrc = $("#overlay img").attr("src");
+            // Image with matching location of the overlay image
+            var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+            // Finds the next image
+            var $nextImg = $($currentImg.closest(".image").next().find("img"));
+            // All of the images in the gallery
+            var $images = $("#image-gallery img");
+            // If there is a next image
+            if ($nextImg.length > 0) {
+                // Fade in the next image
+                $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+            } else {
+                // Otherwise fade in the first image
+                $("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
+            }
+            // Prevents overlay from being hidden
+            event.stopPropagation();
+        });
+
+        // When previous button is clicked
+        $prevButton.click(function (event) {
+            // Hide the current image
+            $("#overlay img").hide();
+            // Overlay image location
+            var $currentImgSrc = $("#overlay img").attr("src");
+            // Image with matching location of the overlay image
+            var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+            // Finds the next image
+            var $nextImg = $($currentImg.closest(".image").prev().find("img"));
+            // Fade in the next image
+            $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+            // Prevents overlay from being hidden
+            event.stopPropagation();
+        });
+
+        // When the exit button is clicked
+        $exitButton.click(function () {
+            // Fade out the overlay
+            $("#overlay").fadeOut("slow");
+        });
+    </script>
+    <script src="pdfbook/three.min.js"></script>
+    <script src="pdfbook/pdf.min.js"></script>
+    <script src="pdfbook/3dflipbook.min.js"></script>
+</body>
+
+
+
+
+</html>

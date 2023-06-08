@@ -11,7 +11,7 @@
     <meta name="description" content="" />
     <link rel="icon" href="../images/faviconn.png" type="image/x-icon" />
     <link rel="shortcut icon" type="image/x-icon" href="../faviconn.png" />
-    <title>Safalya | About</title>
+    <title>Safalya | EMI Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/font-awesome.min.css" />
@@ -29,6 +29,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i&amp;subset=latin-ext" rel="stylesheet">
     <style>
+        ::-webkit-scrollbar {
+  display: none;
+}
+.emiiframe::-webkit-scrollbar {
+  display: none;
+}
+
         @media (min-width:320px) {
             .main-footer {
                 margin-top: 30px;
@@ -158,7 +165,7 @@
             
 
         </div>
-        <iframe src="emi_calc_if.html" name="iframe_a" height="1400px" width="100%" title="Iframe Example"></iframe>
+        <iframe src="emi_calc_if.html" class="emiiframe" style="overflow:hidden;" name="iframe_a" height="1400px" width="100%" title="Iframe "></iframe>
 
         <!-- FOOTER START -->
         <footer class="main-footer">
