@@ -576,7 +576,12 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 }
-
+.hero-img{
+	height: 100%;
+	position:absolute;
+	object-fit: cover;
+	top: 0;
+}
 
 a {
 	color: #767676;
