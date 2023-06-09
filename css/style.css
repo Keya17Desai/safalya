@@ -11780,7 +11780,7 @@ ol.commentlist li::after {
 		margin-left: 15px;margin-right: 15px;
 	}
 	.welcomepadd{
-		padding-top: 5px;
+		padding-top: 5px !important;
 	}
 	.welcomepaddindex{
 		padding-top: 25px;
