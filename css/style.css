@@ -578,6 +578,7 @@ body {
 }
 .hero-img{
 	height: 100%;
+	width: 100%;
 	position:absolute;
 	object-fit: cover;
 	top: 0;
